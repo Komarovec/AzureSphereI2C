@@ -15,7 +15,7 @@
       "imagePath": "${debugInfo.targetImage}",
       "targetCore": "HLCore",
       "targetApiSet": "${env.AzureSphereTargetApiSet}",
-      "partnerComponents": [ "1232f48f-26d4-492a-942c-4aacb608fe6e" ]
+      "partnerComponents": [ "8464133d-eaf5-4b5d-90ee-caf72f421836" ]
     }
   ]
 }

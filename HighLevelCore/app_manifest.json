@@ -1,13 +1,12 @@
 ﻿{
   "SchemaVersion": 1,
-  "Name": "SphereTest_HighLevelCore",
-  "ComponentId": "6eb3fa0b-c96d-4873-b3ee-cf273f213f57",
+  "Name": "BlueControl_HighLevelCore",
+  "ComponentId": "733d25d3-886d-41e7-aec9-60dacd4a25de",
   "EntryPoint": "/bin/app",
   "CmdArgs": [],
   "Capabilities": {
-    "Gpio": [ 8, 9, 10, 15, 16, 17, 18, 19, 20, 12, 13, 0, 1, 4, 5, 57, 58, 11, 14, 48 ],
-    "Uart": [ "ISU0", "ISU3" ],
-    "AllowedApplicationConnections": []
+    "I2cMaster": [ "ISU0", "ISU1" ],
+    "AllowedApplicationConnections": [ "8464133d-eaf5-4b5d-90ee-caf72f421836" ]
   },
   "ApplicationType": "Default"
 }

@@ -1,11 +1,11 @@
 ﻿{
   "SchemaVersion": 1,
-  "Name": "SphereTest_RealTimeCore",
-  "ComponentId": "1232f48f-26d4-492a-942c-4aacb608fe6e",
+  "Name": "BlueControl_RealTimeCore",
+  "ComponentId": "8464133d-eaf5-4b5d-90ee-caf72f421836",
   "EntryPoint": "/bin/app",
   "CmdArgs": [],
   "Capabilities": {
-    "AllowedApplicationConnections": [ "6eb3fa0b-c96d-4873-b3ee-cf273f213f57" ]
+    "AllowedApplicationConnections": [ "733d25d3-886d-41e7-aec9-60dacd4a25de" ]
   },
   "ApplicationType": "RealTimeCapable"
 }

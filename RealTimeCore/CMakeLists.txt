@@ -2,7 +2,7 @@
 #  Licensed under the MIT License.
 
 cmake_minimum_required (VERSION 3.8)
-project (SphereTest_RealTimeCore C)
+project (BlueControl_RealTimeCore C)
 
 # Create executable
 add_executable (${PROJECT_NAME} main.c)
