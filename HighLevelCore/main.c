@@ -210,6 +210,11 @@ void stop(int _i2c) {
     for (int i = 0; i < 16; i++) {
         setPWM(_i2c, i, 0, 0);
     }
+
+    // Send everything again --> sometimes does not work -> maybe check?
+    for (int i = 0; i < 16; i++) {
+        setPWM(_i2c, i, 0, 0);
+    }
 }
 
 /*!
@@ -255,17 +260,22 @@ int main() {
     initBoard(_i2c);
 
     while (1) {
-        // Go slowly forward for 1 sec
-        forward(_i2c, 300);
+        // Go forward for 1 sec
+        forward(_i2c, 1000);
         nanosleep(&sleepTime, NULL);
 
-        // Go slowly backward for 1 sec
-        stop(_i2c); // Always clean pins until you take another action!
-        backward(_i2c, 200);
-        nanosleep(&sleepTime, NULL);
-
-        // Stop for 1 sec
+        // Stop for 2 secs
         stop(_i2c);
+        nanosleep(&sleepTime, NULL);
+        nanosleep(&sleepTime, NULL);
+
+        // Go backward for 1 sec
+        backward(_i2c, 1000);
+        nanosleep(&sleepTime, NULL);
+
+        // Stop for 2 secs
+        stop(_i2c);
+        nanosleep(&sleepTime, NULL);
         nanosleep(&sleepTime, NULL);
     }
 }
